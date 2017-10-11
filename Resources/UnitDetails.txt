@@ -1,0 +1,9 @@
+<templateSheet> 
+<unit 	team="0"	UnitType="medievalUnit_03.png" 	health="100" 	attackPower="1"		range="25" 	maxSpeed="1.5"	/>
+<unit 	team="0"	UnitType="medievalUnit_04.png" 	health="150" 	attackPower="1.2"	range="25" 	maxSpeed="1.4"	/>
+<unit 	team="0"	UnitType="medievalUnit_02.png" 	health="70" 	attackPower="0.5"	range="25" 	maxSpeed="1.5"	/>
+											
+<unit 	team="1"	UnitType="medievalUnit_09.png" 	health="100" 	attackPower="1"		range="25" 	maxSpeed="1.5"	/>
+<unit 	team="1"	UnitType="medievalUnit_10.png" 	health="150" 	attackPower="1.2"	range="25" 	maxSpeed="1.4"	/>
+<unit 	team="1"	UnitType="medievalUnit_08.png" 	health="70" 	attackPower="0.5"	range="25" 	maxSpeed="1.5"	/>
+</templateSheet>

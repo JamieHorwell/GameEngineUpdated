@@ -1,0 +1,16 @@
+<GUIElements>
+	<GUIelement name="build" x="60" y="550" textToDisplay="build unit" font="Arial.ttf" fontSize="9" texture="bricks.png" size="300" />
+	
+	<GUIelement name="start" x="300" y="200" textToDisplay="Start Game" font="Arial.ttf" fontSize="15" texture="bricks.png" size="400" />
+	
+	<GUIelement name="win" x="300" y="200" textToDisplay="level beat" font="Arial.ttf" fontSize="15" texture="bricks.png" size="400" />
+	
+	<GUIelement name="lost" x="300" y="200" textToDisplay="level lost" font="Arial.ttf" fontSize="15" texture="bricks.png" size="400" />
+
+<GUIelement name="time" x="0" y="100" textToDisplay="time:" font="Arial.ttf" fontSize="15" texture="bricks.png" size="80" />
+
+<GUIelement name="level" x="0" y="200" textToDisplay="level:" font="Arial.ttf" fontSize="15" texture="bricks.png" size="80" />
+
+<GUIelement name="resource" x="0" y="0" textToDisplay="resources:" font="Arial.ttf" fontSize="15" texture="bricks.png" size="80" />
+	
+</GUIElements>

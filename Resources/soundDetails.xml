@@ -1,0 +1,6 @@
+<sounds>
+<sound soundid = "attack" file="attack.wav" />
+<sound soundid = "death"  file="death.wav" />
+
+
+</sounds>

@@ -1,0 +1,18 @@
+<LevelDetails>
+	<SpawnPoints>
+	<SpawnPoint unitType="medievalUnit_09.png" maxCount="1000" spawnx="350" spawny="500" squadsize="2"/>
+	</SpawnPoints>
+
+	<Units>
+	<Unit unitType="medievalUnit_04.png" king="true" posx="300" posy="50"/>
+	<Unit unitType="medievalUnit_03.png" king="false" posx="340" posy="55"/>
+	<Unit unitType="medievalUnit_03.png" king="false" posx="340" posy="65"/>
+	<Unit unitType="medievalUnit_03.png" king="false" posx="260" posy="55"/>
+	<Unit unitType="medievalUnit_03.png" king="false" posx="300" posy="55"/>
+	</Units>
+
+	<Buildings>
+	<Building buildingType="Barracks" posx = "450" posy= "50" />
+	</Buildings>
+
+</LevelDetails>

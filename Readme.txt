@@ -1,0 +1,1 @@
+Please run the exe in Debug folder for the game, Release mode does not currently build

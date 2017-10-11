@@ -1,0 +1,17 @@
+<templateSheet spriteSheet="medievalRTS_spritesheet.xml"> 
+<unit 	team="0"	unitType="medievalUnit_04.png" 	health="200" 	attackPower="18.07"		range="30" 	maxSpeed="12" agroRange="200"	/>
+
+<unit 	team="0"	unitType="medievalUnit_03.png" 	health="150" 	attackPower="12.15"	range="30" 	maxSpeed="10"	agroRange="200"	/>
+
+<unit 	team="0"	unitType="medievalUnit_05.png" 	health="70" 	attackPower="17.08"	range="30" 	maxSpeed="10.5" agroRange="200"	/>
+
+<unit 	team="0"	unitType="medievalUnit_01.png" 	health="70" 	attackPower="17.08"	range="30" 	maxSpeed="10.5" agroRange="200"	/>
+
+
+											
+<unit 	team="1"	unitType="medievalUnit_09.png" 	health="70" 	attackPower="11.07"		range="30" 	maxSpeed="12"	agroRange="50000"	/>
+
+<unit 	team="1"	unitType="medievalUnit_12.png" 	health="150" 	attackPower="12.15"	range="30" 	maxSpeed="10"	agroRange="5000"/>
+
+<unit 	team="1"	unitType="medievalUnit_08.png" 	health="70" 	attackPower="17.08"	range="30" 	maxSpeed="10.5"	agroRange="5000"/>
+</templateSheet>
