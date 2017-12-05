@@ -1,16 +1,20 @@
 <GUIElements>
-	<GUIelement name="build" x="60" y="550" textToDisplay="build unit" font="Arial.ttf" fontSize="9" texture="bricks.png" size="300" />
+	<GUIelement name="build" x="60" y="550" textToDisplay="build unit" font="Arial.ttf" fontSize="9" texture="bricks.png" xScale="0.2" yScale="0.4" />
 	
-	<GUIelement name="start" x="300" y="200" textToDisplay="Start Game" font="Arial.ttf" fontSize="15" texture="bricks.png" size="400" />
-	
-	<GUIelement name="win" x="300" y="200" textToDisplay="level beat" font="Arial.ttf" fontSize="15" texture="bricks.png" size="400" />
-	
-	<GUIelement name="lost" x="300" y="200" textToDisplay="level lost" font="Arial.ttf" fontSize="15" texture="bricks.png" size="400" />
+	<GUIelement name="title" x="150" y="50" textToDisplay="Protect The King!" font="Arial.ttf" fontSize="24" texture="bricks.png" size="600" xScale="2.0" yScale="0.4" />
 
-<GUIelement name="time" x="0" y="100" textToDisplay="time:" font="Arial.ttf" fontSize="15" texture="bricks.png" size="80" />
+<GUIelement name="start" x="250" y="200" textToDisplay="Start Game" font="Arial.ttf" fontSize="15" texture="bricks.png" size="400" xScale="1.0" yScale="0.3" />
 
-<GUIelement name="level" x="0" y="200" textToDisplay="level:" font="Arial.ttf" fontSize="15" texture="bricks.png" size="80" />
-
-<GUIelement name="resource" x="0" y="0" textToDisplay="resources:" font="Arial.ttf" fontSize="15" texture="bricks.png" size="80" />
 	
+	<GUIelement name="win" x="300" y="200" textToDisplay="level beat" font="Arial.ttf" fontSize="15" texture="bricks.png" size="400" xScale="0.4" yScale="0.2" />
+	
+	<GUIelement name="lost" x="300" y="200" textToDisplay="level lost" font="Arial.ttf" fontSize="15" texture="bricks.png" size="400" xScale="2.0" yScale="1" />
+
+<GUIelement name="time" x="0" y="100" textToDisplay="time:" font="Arial.ttf" fontSize="15" texture="bricks.png" size="80"  xScale="0.4" yScale="0.2" />
+
+<GUIelement name="level" x="0" y="200" textToDisplay="level:" font="Arial.ttf" fontSize="15" texture="bricks.png" size="80"
+xScale="0.4" yScale="0.2" />
+
+<GUIelement name="resource" x="0" y="0" textToDisplay="resources:" font="Arial.ttf" fontSize="15" texture="bricks.png" size="80" xScale="0.4" yScale="0.2" />
+	 
 </GUIElements>

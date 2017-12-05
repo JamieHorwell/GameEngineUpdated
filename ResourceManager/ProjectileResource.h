@@ -6,8 +6,7 @@ class ProjectileResource:
 {
 public:
 
-	inline ProjectileResource(const unsigned int handle, const std::string &name, const std : string &path) : ResourceBase(handle, name, path) {
-	};
+	ProjectileResource(const unsigned int handle, const std::string &name, const std::string &path);
 	~ProjectileResource();
 
 

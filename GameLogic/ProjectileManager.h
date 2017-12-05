@@ -9,6 +9,9 @@ public:
 
 	void updateProjectiles();
 
+
+	void updateProjectilePos(Projectile * proj);
+
 private:
 	std::vector<Projectile*> projectiles;
 

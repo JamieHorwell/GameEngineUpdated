@@ -2,8 +2,8 @@
 
 
 
-ProjectileResource::ProjectileResource()
-{
+ProjectileResource::ProjectileResource(const unsigned int handle, const std::string &name, const std::string &path) : ResourceBase(handle, name, path) {
+
 }
 
 

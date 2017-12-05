@@ -12,3 +12,9 @@ Projectile::~Projectile()
 {
 }
 
+void Projectile::updatePos(sf::Vector2f newPos)
+{
+	this->pos = newPos;
+	this->renderObj->setPos(newPos);
+}
+

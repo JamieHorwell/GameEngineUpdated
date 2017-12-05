@@ -44,7 +44,8 @@ void GUIXMLRead::loadFile(std::string XMLfilename, ResourceManager<GUIElementRes
 	std::string font;
 	int fontSize;
 	std::string texture;
-	int size;
+	float xScale;
+	float yScale;
 	
 
 
@@ -63,7 +64,9 @@ void GUIXMLRead::loadFile(std::string XMLfilename, ResourceManager<GUIElementRes
 		font = elementDetails->first_attribute("font")->value();
 		fontSize = atoi(elementDetails->first_attribute("fontSize")->value());
 		texture = elementDetails->first_attribute("texture")->value();
-		size = atoi(elementDetails->first_attribute("size")->value());
+		//size = atoi(elementDetails->first_attribute("size")->value());
+		xScale = atof(elementDetails->first_attribute("xScale")->value());
+		yScale = atof(elementDetails->first_attribute("yScale")->value());
 
 		//get the relevant sprite from the textureManager
 		sf::Sprite sprite(TextureManager->GetElement(texture)->getTexture());
@@ -77,7 +80,7 @@ void GUIXMLRead::loadFile(std::string XMLfilename, ResourceManager<GUIElementRes
 
 		////now get that resource and init its fields
 
-		GUIManager->GetElement(name)->init(text,sf::Vector2f(x,y),sf::Vector2f(size,size),sprite,fontToUse,fontSize);
+		GUIManager->GetElement(name)->init(text,sf::Vector2f(x,y),sf::Vector2f(xScale,yScale),sprite,fontToUse,fontSize);
 
 		elementDetails = elementDetails->next_sibling();
 	}

@@ -14,9 +14,9 @@ GUIElement::GUIElement(GUIElementResource * GUITemplate)
 	this->pos = GUITemplate->getPos();
 	box = GUITemplate->getSprite();
 	box.setPosition(pos);
-	box.setScale(0.5, 0.2);
+	box.setScale(GUITemplate->getSize());
 	textToDisplay.setPosition(box.getPosition());
-	std::cout << textToDisplay.getFont();
+	
 	this->textToDisplay.setFillColor(sf::Color::Black);
 	this->guiDrawable = new GUIDrawable(&box);
 	this->guiDrawable->addChild(new GUIDrawable(&textToDisplay));

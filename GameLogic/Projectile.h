@@ -14,11 +14,18 @@ public:
 	Projectile(ProjectileTemplateResource &projResource, sf::Vector2f pos, sf::Vector2f targetpos, Unit &targetUnit);
 	~Projectile();
 
+	sf::Vector2f getPos() { return pos; };
+	sf::Vector2f getTargetPos() { return targetpos; };
 
-	
+
+	PhysicsComponent* getPhysObj() { return physicsObj; };
+
+	void updatePos(sf::Vector2f newPos);
 
 private: 
 	sf::Vector2f pos;
+
+	//the position the target was at when the 
 	sf::Vector2f targetpos;
 
 	float damage;

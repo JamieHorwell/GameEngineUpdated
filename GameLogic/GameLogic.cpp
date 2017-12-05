@@ -7,6 +7,7 @@
 
 GameLogic::GameLogic(PhysicsMain* pm, AudioMain* am, MainManager *mm)
 {
+	//begin the game
 	this->physics = pm;
 	this->audio = am;
 	this->um = new UnitManager(pm,am,mm);
@@ -15,6 +16,7 @@ GameLogic::GameLogic(PhysicsMain* pm, AudioMain* am, MainManager *mm)
 	this->us = new UnitSelector(um);
 	this->mm = mm;
 	gm.init(mm);
+	gm.AddGUIElement("title");
 	gm.AddGUIElement("start");
 	
 }
@@ -88,24 +90,28 @@ void GameLogic::updateGUI(float dt)
 {
 	std::stringstream time;
 	time << "time: " << (timeToBeat - dt);
-	gm.getGUIObjs().at(2)->changeText(time.str());
+	gm.getGUIObjs().at(0)->changeText(time.str());
 	std::stringstream levelGUI;
 	levelGUI << "level: " << level;
-	gm.getGUIObjs().at(3)->changeText(levelGUI.str());
+	gm.getGUIObjs().at(2)->changeText(levelGUI.str());
 
 	std::stringstream resourceGUI;
 	resourceGUI << "resources: " << resources;
-	gm.getGUIObjs().at(4)->changeText(resourceGUI.str());
+	gm.getGUIObjs().at(3)->changeText(resourceGUI.str());
 }
 
 void GameLogic::init()
 {
-	gm.getGUIObjs().front()->Delete();
+	//delete all guiObjs
+	for (GUIElement* gEl : gm.getGUIObjs()) {
+		gEl->Delete();
+	}
+	gm.getGUIObjs().clear();
 	this->level = 1;
 	this->gs = new GameSetup(um, physics, mm, *&cm, *&map);
 	LevelDetailsXMLRead::loadFile("../Resources/TestLevelDetails.xml", this);
-	gm.AddGUIElement("build");
 	gm.AddGUIElement("time");
+	gm.AddGUIElement("build");
 	gm.AddGUIElement("level");
 	gm.AddGUIElement("resource");
 	resources = 100;

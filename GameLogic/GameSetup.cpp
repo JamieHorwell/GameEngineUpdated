@@ -26,8 +26,6 @@ GameSetup::~GameSetup()
 }
 
 
-
-
 void GameSetup::InitMap(Map*& map, std::string levelFile)
 {
 	map = new Map(mm, physicsMain);
@@ -36,10 +34,4 @@ void GameSetup::InitMap(Map*& map, std::string levelFile)
 
 }
 
-void GameSetup::initialiseUnits()
-{
 
-
-
-
-}
