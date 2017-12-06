@@ -6,6 +6,11 @@ RangedUnit::RangedUnit()
 {
 }
 
+void RangedUnit::attack(Unit * unitToAttack)
+{
+
+}
+
 
 RangedUnit::~RangedUnit()
 {

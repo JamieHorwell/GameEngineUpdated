@@ -1,6 +1,8 @@
 #pragma once
 #include "Projectile.h"
 #include "../Physics/PhysicsMain.h"
+#include "VectorCalc.h"
+
 class ProjectileManager
 {
 public:

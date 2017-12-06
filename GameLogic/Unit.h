@@ -57,7 +57,7 @@ public:
 	float getAgroRange() { return agroRange; };
 
 
-private:
+protected:
 	int team;
 	int range = 5;
 	float attackPower = 0.001;

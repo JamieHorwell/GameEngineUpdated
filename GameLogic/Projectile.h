@@ -16,11 +16,15 @@ public:
 
 	sf::Vector2f getPos() { return pos; };
 	sf::Vector2f getTargetPos() { return targetpos; };
+	Unit* getTargetUnit() { return targetUnit; };
 
 
 	PhysicsComponent* getPhysObj() { return physicsObj; };
 
 	void updatePos(sf::Vector2f newPos);
+
+	float getDamage() { return damage; };
+
 
 private: 
 	sf::Vector2f pos;

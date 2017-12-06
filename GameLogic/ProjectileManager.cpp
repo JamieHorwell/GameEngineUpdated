@@ -21,6 +21,18 @@ void ProjectileManager::updateProjectiles()
 	std::vector<Projectile*>::iterator currentProjectile;
 	for (currentProjectile = projectiles.begin(); currentProjectile != projectiles.end();) {
 		updateProjectilePos((*currentProjectile));
+
+		//target unit may be deleted
+		if ((*currentProjectile)->getTargetUnit() && VectorCalc::getLength((*currentProjectile)->getTargetUnit()->getCurrentPos() - (*currentProjectile)->getPos()) < 1) {
+			Unit* target = (*currentProjectile)->getTargetUnit();
+			target->setCurrentHealth(target->getCurrentHealth() - (*currentProjectile)->getDamage());
+			currentProjectile = projectiles.erase(currentProjectile);
+		}
+		else if (VectorCalc::getLength((*currentProjectile)->getTargetPos() - (*currentProjectile)->getPos()) < 0.5) {
+			currentProjectile = projectiles.erase(currentProjectile);
+		}
+
+		currentProjectile++;
 	}
 
 }
