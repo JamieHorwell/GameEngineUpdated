@@ -18,6 +18,7 @@ GameLogic::GameLogic(PhysicsMain* pm, AudioMain* am, MainManager *mm)
 	gm.init(mm);
 	gm.AddGUIElement("title");
 	gm.AddGUIElement("start");
+	am->init("../Resources/Hamlet.ogg", mm);
 	
 }
 
@@ -107,6 +108,7 @@ void GameLogic::init()
 		gEl->Delete();
 	}
 	gm.getGUIObjs().clear();
+	
 	this->level = 1;
 	this->gs = new GameSetup(um, physics, mm, *&cm, *&map);
 	LevelDetailsXMLRead::loadFile("../Resources/TestLevelDetails.xml", this);

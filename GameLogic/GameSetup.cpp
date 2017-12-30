@@ -13,7 +13,7 @@ GameSetup::GameSetup(UnitManager* um, PhysicsMain* pm, MainManager* mm, CameraMa
 	InitMap(map,"../Resources/TestLevel.xml");
 	cm = new CameraManager(map->getWidth());
 
-	//initialise music
+	
 	
 	
 	this->unitManager = um;

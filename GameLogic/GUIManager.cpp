@@ -25,7 +25,7 @@ void GUIManager::AddGUIElement(std::string guiType)
 	guiObjs.push_back(newElement);
 }
 
-std::vector<GUIElement*> GUIManager::getGUIObjs()
+std::vector<GUIElement*>& GUIManager::getGUIObjs()
 {
 	return guiObjs;
 }

@@ -11,7 +11,7 @@ public:
 
 	void AddGUIElement(std::string guiType);
 
-	std::vector<GUIElement*> getGUIObjs();
+	std::vector<GUIElement*>& getGUIObjs();
 
 
 
